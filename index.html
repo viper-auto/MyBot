@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ansver Master</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <script defer src="index.js"></script>
+</head>
+<body>
+
+  <nav class="navbar has-shadow is-white">
+    <!-- logo / brand -->
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="./assets/Tree Data Research.jpg" alt="pepsi" style="max-height: 70px;" class="py-2 px-2" >
+      </a>
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+
+
+    <div class="navbar-menu" id="nav-links">
+      <div class="navbar-end">
+        <a class="navbar-item">My Account</a>
+        <a class="navbar-item">My History</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- bredcrumbs -->
+<div class="section pt-4 pb-0">
+  <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+    <ul class="container">
+      <li><a class="has-text-grey"  href="#">The mood</a></li>
+      <li><a class="has-text-grey"  href="#">Tip of day</a></li>
+      <li class="is-active"><a href="#" aria-current="page">Random Wizard</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+<!-- questions & answers -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline">
+
+      <div class="column is-12-tablet is-4-desktop">
+        <!-- <div class="is-size-4 mb-4"></div> -->
+
+        <h1 class="is-size-3-mobile is-size-1-desktop title">Wizard</h1>
+        <h2 class="is-size-3-mobile is-size-2-desktop subtitle">Simply Wizard</h2>
+
+        <div class="box">
+          <p>
+            Get an answers for any Questions.
+          </p>
+  
+          <p class="mb-4">An extraordinary and delightful master of answers.</p>
+
+          <form id="qaForm">
+            <div class="field">
+              <label class="label">Your Question:</label>
+              <div class="control">
+                <input class="input" id="inputTextarea" type="text" placeholder="Text input" placeholder="Enter Your Question">
+              </div>
+            </div>
+      
+            <div class="mt-6 has-text-centered">
+              <div class="buttons is-centered">
+                <button class="button is-primary" type="submit" id="submitButton">Get an answer</button>        
+                <button class="button is-primary" type="button" id="submitRandom">Random Cite</button>        
+                <button class="button is-primary" type="button" id="resetButton">Reset</button>        
+
+              </div>
+            </div>
+          </form>
+  
+        </div>
+
+      </div>
+      
+      <div  class="column is-12-tablet is-8-desktop" id="qa-block">
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- footer -->
+ <footer class="footer">
+  <div class="content has-text-centered">
+    <p>Copyright 2023 Tree Data Research</p>
+  </div>
+  
+ </footer>
+
+
+
+</body>
+</html>
