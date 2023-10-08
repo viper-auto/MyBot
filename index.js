@@ -76,7 +76,7 @@ document.getElementById('resetButton').addEventListener('click', (evt) => {
   qaBlock.insertBefore(newArticleElem, qaBlock.firstChild);
 
   document.getElementById("inputTextarea").value = '';
-  document.getElementById("inputTextarea").focus();
+  // document.getElementById("inputTextarea").focus();
 }
 
 // -------------------------------------------------------
@@ -145,7 +145,7 @@ function GetCurrentDateTime(){
 function delCiteRow(event) {
   this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
 
-  document.getElementById("inputTextarea").focus();
+  // document.getElementById("inputTextarea").focus();
 }
 
 // -------------------------------------------------------
